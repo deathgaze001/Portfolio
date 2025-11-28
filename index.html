@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohak Lall Shah | Product Manager</title>
+    <meta name="description"
+        content="Impact-driven Product Manager delivering scalable solutions and operational efficiency.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* CRITICAL STYLES INJECTED TO BYPASS CACHE */
+        .card-metrics {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 1rem !important;
+            margin-top: 1.5rem !important;
+            padding-top: 1rem !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+            /* DEBUG: VERIFY SELECTOR */
+        }
+
+        .metric-item {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 0.2rem !important;
+        }
+
+        .metric-value {
+            font-size: 1.1rem !important;
+            font-weight: 700 !important;
+            color: white !important;
+        }
+
+        .metric-label {
+            font-size: 0.8rem !important;
+            color: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        .metric-icon svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        .secondary-stats {
+            display: flex !important;
+            justify-content: space-around !important;
+            /* Spread stats evenly */
+            align-items: center !important;
+            gap: 0 !important;
+            margin: 2rem -3rem -3rem -3rem !important;
+            /* Negative margin to stretch edge-to-edge */
+            padding: 1.5rem !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+            background: rgba(255, 255, 255, 0.02) !important;
+            border-radius: 0 0 20px 20px !important;
+            /* Match card bottom corners */
+            width: calc(100% + 6rem) !important;
+            /* Full width including negative margins */
+            max-width: none !important;
+        }
+
+        .secondary-card {
+            padding: 3rem !important;
+            /* More spacious padding for text */
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .stat-item {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+            border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .stat-item:last-child {
+            border-right: none !important;
+        }
+
+        .sec-stat-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cursor-magic"></div>
+    <canvas id="magic-bg"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="#hero" style="text-decoration: none; color: inherit;">Mohak Lall Shah</a></div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Journey</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="magic-text large-title">Crafting Digital Magic</h1>
+                <p class="subtitle fade-in">Bridging Biotechnology & Product Strategy</p>
+                <div class="hero-contact fade-in">
+                    <a href="mailto:mohak99shah@gmail.com" class="hero-icon-btn" title="Email Me">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="tel:+918143798336" class="hero-icon-btn" title="Call Me">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohak-lall-shah/" target="_blank" class="hero-icon-btn"
+                        title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator"
+                onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                <span>Explore</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section spacious">
+            <h2 class="section-title">The Visionary</h2>
+            <div class="about-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 15c6.667-6 13.333 0 20-6"></path>
+                            <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"></path>
+                            <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"></path>
+                            <path d="M17 6l-2.5-2.5"></path>
+                            <path d="M14 8l-1-1"></path>
+                            <path d="M7 18l2.5 2.5"></path>
+                            <path d="M3.5 14.5l.5.5"></path>
+                            <path d="M20 9l.5.5"></path>
+                            <path d="M6.5 12.5l1 1"></path>
+                            <path d="M16.5 10.5l1 1"></path>
+                            <path d="M10 16l1.5 1.5"></path>
+                        </svg>
+                    </div>
+                    <div class="insight-content">
+                        <h3>Scientific Roots</h3>
+                        <p>From <strong>Cancer Research</strong> to Product Management. I traded long research timelines
+                            for the <strong>direct, tangible impact</strong> of building products.</p>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="insight-content">
+                        <h3>Product Alchemist</h3>
+                        <p>I bring <strong>structured thinking and user-centric design</strong> to transmute complex
+                            needs into seamless, intuitive digital experiences.</p>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m10.065 12.493-6.13 6.132a3 3 0 1 0 4.243 4.243l6.13-6.133"></path>
+                            <path d="m14 2 6 6"></path>
+                            <path d="m22 2-6 6"></path>
+                            <path d="m10.477 12.08 7.444-7.444a3 3 0 0 1 4.243 0v0a3 3 0 0 1 0 4.243l-7.444 7.444">
+                            </path>
+                            <path d="m16.718 18.32 2.12 2.122"></path>
+                            <path d="m18.84 16.198 2.12 2.122"></path>
+                        </svg>
+                    </div>
+                    <div class="insight-content">
+                        <h3>Future Focused</h3>
+                        <p>Driven by <strong>perfection and growth</strong>. I aim to diversify across industries, with
+                            <strong>Bio-Tech and Research</strong> always holding a special place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">The Arsenal</h2>
+
+            <!-- Featured Project: Enterprise Suite -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>Enterprise Planning Tools Suite</h3>
+                    <p class="feature-meta">Greater Than Educational Technologies • 2023-Present</p>
+                    <div class="suite-tags">
+                        <span class="suite-tag">Enterprise</span>
+                        <span class="suite-tag">EdTech</span>
+                        <span class="suite-tag">Operations</span>
+                    </div>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">14+</span>
+                        <span class="stat-label">Internal Tools</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">30K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">70%</span>
+                        <span class="stat-label">Efficiency Gain</span>
+                    </div>
+                </div>
+
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h5>Microschedule</h5>
+                        <p>Comprehensive syllabus tracking system ensuring academic progress visibility for over 30,000
+                            users across the organization.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">30K+</div>
+                                <div class="metric-label">Users</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">80%+</div>
+                                <div class="metric-label">Adoption</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>AI Lesson Planner</h5>
+                        <p>Intelligent planning assistant that auto-generates optimized teaching schedules based on
+                            topic data.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">20m</div>
+                                <div class="metric-label">vs 2hr</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg></div>
+                                <div class="metric-value">80%</div>
+                                <div class="metric-label">Faster</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h5>Staff Workload</h5>
+                        <p>Resource allocation tool optimizing staff distribution and workload balance across
+                            departments.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Coverage</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">0</div>
+                                <div class="metric-label">Overload</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h5>User Management</h5>
+                        <p>Centralized RBAC system managing access and permissions for over 5,000 staff members
+                            securely.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">5</div>
+                                <div class="metric-label">Admins</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h5>Memo</h5>
+                        <p>Secure file sharing platform implementing zero-trust architecture for sensitive document
+                            exchange.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg></div>
+                                <div class="metric-value">Secure</div>
+                                <div class="metric-label">Share</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Encrypted</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h5>Exam Results Portal</h5>
+                        <p>Secure portal for publishing and accessing student examination results with detailed
+                            analytics.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Uptime</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">&lt;1s</div>
+                                <div class="metric-label">Load Time</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <h5>Digital Library</h5>
+                        <p>Comprehensive digital repository for educational resources, e-books, and research papers.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">20K+</div>
+                                <div class="metric-label">Resources</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">24/7</div>
+                                <div class="metric-label">Access</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h5>Opinion Poll</h5>
+                        <p>Feedback collection tool for gathering stakeholder opinions and driving data-backed
+                            decisions.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">80%</div>
+                                <div class="metric-label">Response</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">Data</div>
+                                <div class="metric-label">Driven</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h5>Audit Reports</h5>
+                        <p>Automated auditing system for compliance tracking and operational transparency.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Compliance</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">2hrs</div>
+                                <div class="metric-label">Saved/Day</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <h5>Fleet Management</h5>
+                        <p>Real-time transport tracking system ensuring student safety and fleet efficiency.</p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">Live</div>
+                                <div class="metric-label">Tracking</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg></div>
+                                <div class="metric-value">2000+</div>
+                                <div class="metric-label">Buses</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Parent Concerns</h5>
+                        <p>Dedicated portal for addressing parent queries and maintaining open communication channels.
+                        </p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">&lt;24h</div>
+                                <div class="metric-label">Resolution</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg></div>
+                                <div class="metric-value">4.8/5</div>
+                                <div class="metric-label">Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                            </svg>
+                        </div>
+                        <h5>Reach Disha</h5>
+                        <p>Mental health support platform connecting students with trained counselors and psychologists.
+                        </p>
+                        <div class="card-metrics">
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">1000+</div>
+                                <div class="metric-label">Students</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg></div>
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Privacy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internal & Independent Projects -->
+            <h3 style="margin: 4rem 0 2rem; color: white; font-size: 1.8rem;">Internal & Independent Projects</h3>
+            <div class="tools-grid">
+                <!-- Team Sprint Planner -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h5>Team Sprint Planner</h5>
+                    <p>Unified resource manager integrating task and leave data for precise sprint allocation.</p>
+                    <div class="card-metrics">
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg></div>
+                            <div class="metric-value">20hrs</div>
+                            <div class="metric-label">Saved</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                    <polyline points="17 6 23 6 23 12"></polyline>
+                                </svg></div>
+                            <div class="metric-value">95%</div>
+                            <div class="metric-label">On-time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leave Tracker -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h5>Leave Tracker</h5>
+                    <p>One-tap approval system with automated daily availability notifications for the team.</p>
+                    <div class="card-metrics">
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg></div>
+                            <div class="metric-value">30s</div>
+                            <div class="metric-label">Process</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg></div>
+                            <div class="metric-value">100%</div>
+                            <div class="metric-label">Digital</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Tracker -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h5>Task Tracker</h5>
+                    <p>Centralized project registry tracking task breakdowns and ownership across all initiatives.</p>
+                    <div class="card-metrics">
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg></div>
+                            <div class="metric-value">15+</div>
+                            <div class="metric-label">Projects</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg></div>
+                            <div class="metric-value">100%</div>
+                            <div class="metric-label">On-Track</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaze-Tracking Proctoring -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h5>Gaze-Tracking Proctoring</h5>
+                    <p>Innovative prototype for remote examinations utilizing advanced gaze-tracking technology.</p>
+                    <div class="card-metrics">
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="22" y1="12" x2="18" y2="12"></line>
+                                    <line x1="6" y1="12" x2="2" y2="12"></line>
+                                    <line x1="12" y1="6" x2="12" y2="2"></line>
+                                    <line x1="12" y1="22" x2="12" y2="18"></line>
+                                </svg></div>
+                            <div class="metric-value">90%</div>
+                            <div class="metric-label">Accuracy</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path
+                                        d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V11a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V5.73C19.4 5.39 19 4.74 19 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V11a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4V5.73C10.4 5.39 10 4.74 10 4a2 2 0 0 1 2-2z">
+                                    </path>
+                                </svg></div>
+                            <div class="metric-value">Real-time</div>
+                            <div class="metric-label">Tracking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section spacious">
+            <h2 class="section-title">The Journey</h2>
+            <div class="timeline-container">
+                <!-- Current Role -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Dec 2023 – Present</span>
+                        <h3>Associate Product Manager</h3>
+                        <h4>Greater Than Educational Technologies</h4>
+                        <p>Leading digital transformation through a suite of <span class="highlight-stat">14+ internal
+                                tools</span>,
+                            impacting <span class="highlight-stat">30,000+ users</span>.</p>
+                    </div>
+                </div>
+
+                <!-- APM Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sept 2023 – Dec 2023</span>
+                        <h3>Associate Product Manager Intern</h3>
+                        <h4>Greater Than Educational Technologies</h4>
+                        <p>Built a task management system improving efficiency by <span
+                                class="highlight-stat">30%</span>. Conducted
+                            usability testing
+                            reducing task time by <span class="highlight-stat">15%</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Business Analyst Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2023 – Sept 2023</span>
+                        <h3>Business Analyst Intern</h3>
+                        <h4>Terranova</h4>
+                        <p>Analyzed metrics driving <span class="highlight-stat">15% revenue increase</span>. Identified
+                            pain points
+                            increasing satisfaction
+                            by <span class="highlight-stat">20%</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Masters -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 – 2022</span>
+                        <h3>MSc in Cancer Research</h3>
+                        <h4>University of Glasgow, UK</h4>
+                        <p>Specialized in precision medicine and data analysis. Developed a strong
+                            foundation in
+                            scientific research methodologies.</p>
+                    </div>
+                </div>
+
+                <!-- Bachelors -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017 – 2021</span>
+                        <h3>BTech in Biotechnology</h3>
+                        <h4>SRM Institute of Science and Technology</h4>
+                        <p>Focused on bio-engineering and genetic analysis. Graduated with
+                            distinction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="education-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"></path>
+                            <path d="M19 4c0-1.1-.9-2-2-2A2 2 0 0 0 15 4c0 1.1.9 2 2 2 2 2 0 0 0 2-2"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>ISB – Product Management</h4>
+                        <span>Product Management</span>
+                        <div class="cert-tags">
+                            <span class="cert-tag ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                            </path>
+                            <path
+                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                            </path>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Product Management Career Accelerator</h4>
+                        <span>Growth School</span>
+                        <div class="cert-tags">
+                            <span class="cert-tag completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Tech Simplified for Product Managers</h4>
+                        <span>Growth School</span>
+                        <div class="cert-tags">
+                            <span class="cert-tag completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills & Expertise</h2>
+
+            <div class="skills-wrapper">
+                <!-- Strategy -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Product Strategy & Planning</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg> Product Strategy</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg> OKRs & Goal Setting</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"></path>
+                            </svg> Roadmap Planning</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg> Stakeholder Management</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                </path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg> PRD Writing</li>
+                    </ul>
+                </div>
+
+                <!-- Data -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3>Data & Research</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg> SQL & Analytics</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg> A/B Testing</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg> User Interviews (30+)</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg> Usability Testing</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg> Workflow Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Execution -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Execution & Delivery</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg> Agile (Scrum/Kanban)</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg> SDLC Management</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg> Cross-functional Leadership</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg> Systems Mapping</li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg> Product Owner Role</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tools & Languages -->
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="pill-container">
+                        <span class="pill blue"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg> Jira</span>
+                        <span class="pill purple"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z">
+                                </path>
+                                <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                                <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                                <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z">
+                                </path>
+                                <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z">
+                                </path>
+                            </svg> Figma</span>
+                        <span class="pill gold"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="14" x2="23" y2="14"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="14" x2="4" y2="14"></line>
+                            </svg> SQL</span>
+                        <span class="pill green"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg> Excel</span>
+                        <span class="pill blue"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg> Mixpanel</span>
+                        <span class="pill purple"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                </path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg> Notion</span>
+                        <span class="pill gold">Tableau</span>
+                        <span class="pill green">Python</span>
+                        <span class="pill blue">Asana</span>
+                        <span class="pill purple">Trello</span>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="lang-row">
+                        <span>Hindi</span>
+                        <span class="lang-badge">Fluent</span>
+                    </div>
+                    <div class="lang-row">
+                        <span>English</span>
+                        <span class="lang-badge">Fluent</span>
+                    </div>
+                    <div class="lang-row">
+                        <span>Urdu</span>
+                        <span class="lang-badge">Fluent</span>
+                    </div>
+                    <div class="lang-row">
+                        <span>Telugu</span>
+                        <span class="lang-badge">Conversational</span>
+                    </div>
+                    <div class="lang-row">
+                        <span>German</span>
+                        <span class="lang-badge">Beginner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Summon Me</h2>
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h3>Ready to create magic together?</h3>
+                    <p style="margin: 1rem 0 3rem; color: rgba(255,255,255,0.7);">Whether it's a product challenge, a
+                        biotech innovation, or just a chat about the future of EdTech.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Tabs -->
+                    <div class="contact-tabs">
+                        <button class="tab-btn active" data-tab="message">Send Message</button>
+                        <button class="tab-btn" data-tab="meeting">Schedule Meeting</button>
+                        <button class="tab-btn" data-tab="connect">Quick Connect</button>
+                    </div>
+
+                    <!-- Tab 1: Send Message (Email) -->
+                    <div id="message" class="tab-pane active">
+                        <form id="emailForm" class="contact-form" action="https://formspree.io/f/mohak99shah@gmail.com"
+                            method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" id="emailName" name="name" class="magic-input"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="emailAddress" name="email" class="magic-input"
+                                        placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <select id="emailSubject" name="subject" class="magic-input">
+                                    <option value="Product Opportunity">Product Opportunity</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea id="emailBody" name="message" class="magic-input" rows="4"
+                                    placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Attachment (Optional)</label>
+                                <input type="file" id="emailFile" name="attachment" class="magic-input">
+                                <small style="color: rgba(255,255,255,0.5); display: block; margin-top: 0.5rem;">Note:
+                                    Files must be manually attached in your email client if using mailto, but here they
+                                    send
+                                    directly!</small>
+                            </div>
+                            <button type="submit" class="magic-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Tab 2: Schedule Meeting (GMeet) -->
+                    <div id="meeting" class="tab-pane">
+                        <form id="meetingForm" class="contact-form">
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" id="meetingDate" class="magic-input" required
+                                    style="color-scheme: dark;">
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Time</label>
+                                <input type="time" id="meetingTime" class="magic-input" required
+                                    style="color-scheme: dark;">
+                            </div>
+                            <button type="submit" class="magic-btn">Generate Meeting Link</button>
+                        </form>
+                    </div>
+
+                    <!-- Tab 3: Quick Connect -->
+                    <div id="connect" class="tab-pane">
+                        <div class="social-connect" style="border: none; padding-top: 0;">
+                            <p>Connect directly on professional networks</p>
+                            <a href="https://www.linkedin.com/in/mohak-lall-shah/" target="_blank" class="linkedin-btn">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                Connect on LinkedIn
+                            </a>
+                            <div class="phone-display" style="margin-top: 2rem;">
+                                <p style="margin-bottom: 0.5rem; color: rgba(255,255,255,0.6);">Or call me at:</p>
+                                <a href="tel:+918143798336"
+                                    style="color: var(--accent-color); font-size: 1.2rem; text-decoration: none; font-weight: 600;">
+                                    +91 8143798336
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mohak Lall Shah. Crafted with Magic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

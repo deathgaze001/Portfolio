@@ -158,15 +158,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Date/Time Picker Trigger ---
-    const dateInputs = document.querySelectorAll('input[type="date"], input[type="time"]');
-    dateInputs.forEach(input => {
-        input.addEventListener('click', () => {
+    // --- Date/Time Picker Logic (Type Switch + Auto Open) ---
+    const meetingDate = document.getElementById('meetingDate');
+    const meetingTime = document.getElementById('meetingTime');
+
+    const setupPicker = (input, type) => {
+        if (!input) return;
+
+        input.addEventListener('focus', () => {
+            input.type = type;
             if (typeof input.showPicker === 'function') {
-                input.showPicker();
+                try {
+                    input.showPicker();
+                } catch (e) {
+                    console.log('showPicker not supported or blocked');
+                }
             }
         });
-    });
+
+        input.addEventListener('blur', () => {
+            if (!input.value) {
+                input.type = 'text';
+            }
+        });
+    };
+
+    setupPicker(meetingDate, 'date');
+    setupPicker(meetingTime, 'time');
 
     // --- Smooth Scrolling & Navigation ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -226,50 +244,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Email Form Handler (AJAX for Formspree)
+    // Email Form Handler (Mailto)
     const emailForm = document.getElementById('emailForm');
     if (emailForm) {
-        emailForm.addEventListener('submit', async (e) => {
+        emailForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const subject = document.getElementById('emailSubject').value;
+            const message = document.getElementById('emailBody').value;
+            const name = document.getElementById('emailName').value;
+
+            // Construct Gmail Web Compose Link
+            const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=mohak99shah@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\n\n${message}`)}`;
+
+            // Open in new tab
+            window.open(gmailLink, '_blank');
+
+            // Optional: Visual feedback
             const btn = emailForm.querySelector('button');
             const originalText = btn.innerText;
-
-            btn.innerText = 'Sending...';
-            btn.style.opacity = '0.7';
-
-            const formData = new FormData(emailForm);
-
-            try {
-                const response = await fetch(emailForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    btn.innerText = '✨ Sent! ✨';
-                    btn.style.background = 'linear-gradient(135deg, #2ecc71, #27ae60)';
-                    emailForm.reset();
-                    setTimeout(() => {
-                        btn.innerText = originalText;
-                        btn.style.background = '';
-                        btn.style.opacity = '1';
-                    }, 3000);
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                btn.innerText = 'Error! Try again.';
-                btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.style.background = '';
-                    btn.style.opacity = '1';
-                }, 3000);
-            }
+            btn.innerText = 'Opening Gmail...';
+            setTimeout(() => {
+                btn.innerText = originalText;
+                emailForm.reset();
+            }, 2000);
         });
     }
 

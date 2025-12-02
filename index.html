@@ -115,7 +115,7 @@
                 <h1 class="magic-text large-title">Crafting Digital Magic</h1>
                 <p class="subtitle fade-in">Bridging Biotechnology & Product Strategy</p>
                 <div class="hero-contact fade-in">
-                    <a href="mailto:mohak99shah@gmail.com" class="hero-icon-btn" title="Email Me">
+                    <a href="#contact" class="hero-icon-btn" title="Contact Me">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -202,7 +202,8 @@
                     <div class="insight-content">
                         <h3>Future Focused</h3>
                         <p>Driven by <strong>perfection and growth</strong>. I aim to diversify across industries, with
-                            <strong>Bio-Tech and Research</strong> always holding a special place.</p>
+                            <strong>Bio-Tech and Research</strong> always holding a special place.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1125,31 +1126,30 @@
                 <div class="contact-content">
                     <h3>Ready to create magic together?</h3>
                     <p style="margin: 1rem 0 3rem; color: rgba(255,255,255,0.7);">Whether it's a product challenge, a
-                        biotech innovation, or just a chat about the future of EdTech.</p>
+                        biotech innovation, or just a chat about the future of Product Management.</p>
                 </div>
 
                 <div class="contact-wrapper">
                     <!-- Contact Tabs -->
                     <div class="contact-tabs">
-                        <button class="tab-btn active" data-tab="message">Send Message</button>
+                        <button class="tab-btn active" data-tab="message">Send a Message</button>
                         <button class="tab-btn" data-tab="meeting">Schedule Meeting</button>
                         <button class="tab-btn" data-tab="connect">Quick Connect</button>
                     </div>
 
                     <!-- Tab 1: Send Message (Email) -->
                     <div id="message" class="tab-pane active">
-                        <form id="emailForm" class="contact-form" action="https://formspree.io/f/mohak99shah@gmail.com"
-                            method="POST">
+                        <form id="emailForm" class="contact-form">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input type="text" id="emailName" name="name" class="magic-input"
-                                        placeholder="Your Name" required>
+                                        placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" id="emailAddress" name="email" class="magic-input"
-                                        placeholder="your@email.com" required>
+                                        placeholder="your@email.com">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -1163,15 +1163,7 @@
                             <div class="form-group">
                                 <label>Message</label>
                                 <textarea id="emailBody" name="message" class="magic-input" rows="4"
-                                    placeholder="Tell me about your project..." required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Attachment (Optional)</label>
-                                <input type="file" id="emailFile" name="attachment" class="magic-input">
-                                <small style="color: rgba(255,255,255,0.5); display: block; margin-top: 0.5rem;">Note:
-                                    Files must be manually attached in your email client if using mailto, but here they
-                                    send
-                                    directly!</small>
+                                    placeholder="Tell me about your project..."></textarea>
                             </div>
                             <button type="submit" class="magic-btn">Send Message</button>
                         </form>
@@ -1182,12 +1174,12 @@
                         <form id="meetingForm" class="contact-form">
                             <div class="form-group">
                                 <label>Preferred Date</label>
-                                <input type="date" id="meetingDate" class="magic-input" required
+                                <input type="text" id="meetingDate" class="magic-input" placeholder="Select Date"
                                     style="color-scheme: dark;">
                             </div>
                             <div class="form-group">
                                 <label>Preferred Time</label>
-                                <input type="time" id="meetingTime" class="magic-input" required
+                                <input type="text" id="meetingTime" class="magic-input" placeholder="Select Time"
                                     style="color-scheme: dark;">
                             </div>
                             <button type="submit" class="magic-btn">Generate Meeting Link</button>

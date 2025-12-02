@@ -42,3 +42,16 @@ You can publish this website for free using **GitHub Pages** or **Netlify**.
 To run this site locally:
 1.  Open `index.html` in your browser.
 2.  Or use a live server (e.g., VS Code Live Server extension).
+
+## 🔄 How to Update Your Site
+
+Whenever you make changes to your code (HTML, CSS, JS), follow these steps to update the live site:
+
+1.  Open your terminal in this folder.
+2.  Run these 3 commands:
+    ```bash
+    git add .
+    git commit -m "Update site content"
+    git push
+    ```
+3.  Wait 1-2 minutes, and GitHub Pages will automatically update with your changes!
